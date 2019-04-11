@@ -10,6 +10,12 @@ object pepon {
 // implementar el objeto entero, salvo haceLoQueQuieras que lo damos hecho
 // ayuda: conviene ponerle dos atributos
 object pipa {
+	var cuantosKm = 0
+	var cuantosGramos = 0
+	method volar(kms){cuantosKm += kms} 
+	method comer(cosa, cuanto){cuantosGramos += cuanto}
+	method kmsIngeridos(){return cuantosKm}
+	method cuantosGramos(){return cuantosGramos}
 	/*
 	 * cuando le dicen a pipa que haga lo que quiera, no hace nada
 	 */
